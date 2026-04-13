@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Gen Prime | Under Construction</title>
+  <meta
+    name="description"
+    content="Neo Gen Prime official website is currently under construction. For business and media enquiries, contact Business@NeoGenPrime.com"
+  />
+  <style>
+    :root {
+      --bg: #06080d;
+      --bg-soft: rgba(255, 255, 255, 0.04);
+      --panel: rgba(10, 14, 22, 0.82);
+      --border: rgba(255, 255, 255, 0.10);
+      --text: #f3f6fb;
+      --muted: #a8b2c3;
+      --accent: #5cc8ff;
+      --accent-soft: rgba(92, 200, 255, 0.18);
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(rgba(4, 7, 12, 0.78), rgba(4, 7, 12, 0.88)),
+        url("ngp-background.jpg") center center / cover no-repeat,
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(92, 200, 255, 0.14), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(92, 200, 255, 0.10), transparent 30%);
+      pointer-events: none;
+    }
+
+    .wrap {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      z-index: 1;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 48px 32px;
+      text-align: center;
+    }
+
+    .logo {
+      width: min(280px, 70%);
+      height: auto;
+      display: block;
+      margin: 0 auto 28px;
+      filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.45));
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(92, 200, 255, 0.25);
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.02;
+      margin-bottom: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .highlight {
+      color: var(--accent);
+    }
+
+    p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      line-height: 1.7;
+    }
+
+    .message {
+      margin-bottom: 30px;
+    }
+
+    .contact-box {
+      margin: 34px auto 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 22px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--bg-soft);
+      flex-wrap: wrap;
+    }
+
+    .contact-label {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-email {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+    .contact-email:hover {
+      color: var(--accent);
+    }
+
+    .footer-note {
+      margin-top: 28px;
+      font-size: 0.9rem;
+      color: #7f8ba0;
+    }
+
+    .grid-glow {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+      opacity: 0.35;
+      pointer-events: none;
+      border-radius: 24px;
+    }
+
+    @media (max-width: 640px) {
+      .panel {
+        padding: 36px 20px;
+        border-radius: 20px;
+      }
+
+      .contact-box {
+        padding: 14px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <div class="grid-glow"></div>
+
+      <!-- Replace with your actual logo file -->
+      <img src="ngp-logo.png" alt="Neo Gen Prime logo" class="logo" />
+
+      <div class="eyebrow">Neo Gen Prime</div>
+
+      <h1>Site <span class="highlight">Under Construction</span></h1>
+
+      <p class="message">
+        The official Neo Gen Prime website is currently being built.
+        A new hub for gaming news, updates, and future content is on the way.
+      </p>
+
+      <div class="contact-box">
+        <span class="contact-label">Business enquiries:</span>
+        <a class="contact-email" href="mailto:Business@NeoGenPrime.com">Business@NeoGenPrime.com</a>
+      </div>
+
+      <p class="footer-note">
+        More updates coming soon.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
